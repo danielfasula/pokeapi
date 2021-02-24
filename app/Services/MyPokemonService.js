@@ -22,8 +22,7 @@ class MyPokemonService {
     async addToTeam() {
         try {
             let pokemon = ProxyState.activePokemon
-            const res = await sandboxApi.post('', pokemon)
-            console.log(res);
+            await sandboxApi.post('', pokemon)
             this.getMyPokemon()
         } catch (error) {
             console.error(error);

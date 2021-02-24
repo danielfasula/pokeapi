@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>Poke API</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-dark navbar-expand">
+            <!-- <a class="navbar-brand d-flex" href="#">
+                <img src="assets/img/pokeball.png" width="50" height="50" alt="" loading="lazy">
+                <h2 class="ml-3 mt-2">GOTTA CATCH EM ALL!</h2>
+            </a> -->
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-pokemon-tab" data-bs-toggle="tab" data-bs-target="#nav-pokemon"
+                    type="button" role="tab" aria-controls="nav-pokemon" aria-selected="true">Pokemon</button>
+
+                <button class="nav-link" id="nav-my-pokemon-tab" data-bs-toggle="tab" data-bs-target="#nav-my-pokemon"
+                    type="button" role="tab" aria-controls="nav-my-pokemon" aria-selected="false">My Pokemon</button>
+
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main class="container-fluid tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active text-center mt-5" id="nav-pokemon" role="tabpanel"
+            aria-labelledby="nav-pokemon-tab">
+
+            <div class="row mr-3">
+                <div class="col-6 ">
+                    <h1 class="ml-5">Pokedex</h1>
+                    <div id="pokemon"></div>
+                </div>
+
+                <div class="col-6" id="active-pokemon"></div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade text-center mt-5" id="nav-my-pokemon" role="tabpanel"
+            aria-labelledby="nav-my-pokemon-tab">
+
+
+            <div class="row" id="myPokemon">
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer class="container-fluid bg-dark text-light">
+        <div class="row text-center">
+            <div class="col">
+                <p><small>Made with love by Codeworks</small></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
